@@ -1,56 +1,49 @@
-# Welcome to your Expo app 👋
+# FHO Connected — Mapa Universitário FHO
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+MVP acadêmico feito com React Native, Expo SDK 58, TypeScript e Expo Router.
 
-## Get started
+## Funcionalidades implementadas
 
-1. Install dependencies
+- Tela inicial com acesso à pesquisa e ao mapa.
+- Lista com **busca interativa** por número ou categoria.
+- Distribuição geográfica dos **116 pontos do CSV**, com marcadores clicáveis.
+- Tela de detalhes e navegação entre telas.
 
-   ```bash
-   npm install
-   ```
+**Atenção:** as coordenadas vieram do levantamento `Mapa FHO- Caminhos FHO.csv`, mas a visualização não tem mapa-base. Os números identificam pontos de passagem, não prédios. O CSV não informa conexões entre pontos; portanto, não há rotas calculadas nem localização GPS nesta versão. Os rótulos 103, 104, 105 e 106 se repetem; cada registro possui um ID interno único.
 
-2. Start the app
+## Execução
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Instale o Node.js compatível com Expo SDK 58. No terminal, na pasta do projeto:
 
 ```bash
-npm run reset-project
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+Pressione `w` para abrir no navegador ou utilize um ambiente Expo compatível no dispositivo. Verifique os tipos com `npx tsc --noEmit`.
 
-### Other setup steps
+## Organização do código
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+```text
+src/
+  app/              # telas e navegação do Expo Router
+    index.tsx       # início
+    locais.tsx      # busca
+    mapa.tsx        # mapa
+    local/[id].tsx  # detalhes
+    _layout.tsx     # pilha de navegação
+  components/       # Screen e CampusMap
+  data/places.ts    # normalização para o mapa
+  data/waypoints.ts # 116 coordenadas do CSV
+```
 
-## Learn more
+## Demonstração em sala
 
-To learn more about developing your project with Expo, look at the following resources:
+Abra **Buscar um local**, digite `Portaria K`, toque no resultado e selecione **Ver no mapa**. Toque em outro marcador e abra seus detalhes.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Próximas etapas
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. Identificar os locais de destino (biblioteca, salas, secretaria) e associá-los a pontos de passagem.
+2. Adicionar um mapa-base ou planta validada do campus.
+3. Registrar quais pontos se conectam e calcular caminhos na rede.
+4. Testar a interface em dispositivos Android/iOS.

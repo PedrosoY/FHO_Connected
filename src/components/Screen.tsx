@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
-import { SafeAreaView, ScrollView, StyleSheet, Text } from 'react-native';
+import { ScrollView, StyleSheet, Text } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 export const colors = { bg: '#f3f7f5', ink: '#153b36', green: '#13795b', muted: '#58736b', white: '#ffffff', line: '#d9e7e1' };
 export function Screen({ title, eyebrow, children }: { title: string; eyebrow?: string; children: ReactNode }) {
   return <SafeAreaView style={styles.safe}><ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={styles.content}>
@@ -15,5 +16,9 @@ export const styles = StyleSheet.create({
   description: { color: colors.muted, fontSize: 15, lineHeight: 22 },
   button: { backgroundColor: colors.green, borderRadius: 13, padding: 16, alignItems: 'center' },
   buttonText: { color: colors.white, fontWeight: '800', fontSize: 16 },
+  statValue: { fontSize: 27, fontWeight: '800', color: colors.green },
+  statLabel: { fontSize: 12, fontWeight: '600', color: colors.muted },
+  toggleText: { fontSize: 15, color: colors.ink, fontWeight: '600' },
+  smallButton: { paddingVertical: 11, paddingHorizontal: 14, flexGrow: 1 },
   input: { backgroundColor: colors.white, borderColor: colors.line, borderWidth: 1, borderRadius: 13, padding: 15, fontSize: 16, color: colors.ink },
 });

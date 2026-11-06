@@ -1,30 +1,58 @@
-import { waypoints } from './waypoints';
+import graphData from './grafo-fho.json';
 
-// Normalização das coordenadas reais para uma visualização sem mapa-base.
-// A conectividade entre pontos ainda precisa ser informada para calcular caminhos.
-const lon = waypoints.map(p => p.longitude);
-const lat = waypoints.map(p => p.latitude);
-const minLon = Math.min(...lon);
-const maxLon = Math.max(...lon);
-const minLat = Math.min(...lat);
-const maxLat = Math.max(...lat);
-
+// O id de cada nó é o identificador CANÔNICO gerado pelo editor Python.
+// source_id representa a coluna "nome" do CSV e não é único.
+export type PlaceCategory = 'Portaria' | 'Bloco' | 'Alimentação' | 'Esporte' | 'Caminho';
 export type Place = {
-  id: string; name: string; category: string; description: string;
-  x: number; y: number; latitude: number; longitude: number;
+  id: number;
+  sourceId: number;
+  name: string;
+  category: PlaceCategory;
+  description: string;
+  latitude: number;
+  longitude: number;
+  x: number;
+  y: number;
 };
 
-export const places: Place[] = waypoints.map((p, index) => ({
-  id: p.id,
-  name: p.label === 'Portaria K' ? p.label : `Ponto ${p.label}`,
-  category: p.label === 'Portaria K' ? 'Acesso' : 'Ponto de passagem',
-  description: p.label === 'Portaria K'
-    ? 'Acesso identificado no levantamento do campus.'
-    : `Registro ${index + 1} do levantamento de caminhos e corredores.`,
-  longitude: p.longitude,
-  latitude: p.latitude,
-  x: 6 + (p.longitude - minLon) / (maxLon - minLon) * 88,
-  y: 6 + (maxLat - p.latitude) / (maxLat - minLat) * 88,
-}));
+function categoryFor(text: string): PlaceCategory {
+  if (/portaria/i.test(text)) return 'Portaria';
+  if (/bloco/i.test(text)) return 'Bloco';
+  if (/cantina|restaurante|refeit[oó]rio/i.test(text)) return 'Alimentação';
+  if (/quadra|poliesportivo|esporte/i.test(text)) return 'Esporte';
+  return 'Caminho';
+}
 
-export const findPlace = (id: string) => places.find(p => p.id === id);
+const nodes = graphData.nodes;
+const minLng = Math.min(...nodes.map(n => n.lng));
+const maxLng = Math.max(...nodes.map(n => n.lng));
+const minLat = Math.min(...nodes.map(n => n.lat));
+const maxLat = Math.max(...nodes.map(n => n.lat));
+
+export const places: Place[] = nodes.map(node => {
+  const description = node.description?.trim() ?? '';
+  return {
+    id: node.id,
+    sourceId: node.source_id,
+    name: description || `Ponto ${node.id}`,
+    category: categoryFor(description),
+    description: description || 'Ponto de passagem cadastrado no levantamento do campus.',
+    latitude: node.lat,
+    longitude: node.lng,
+    x: 5 + (node.lng - minLng) / (maxLng - minLng || 1) * 90,
+    y: 5 + (maxLat - node.lat) / (maxLat - minLat || 1) * 90,
+  };
+});
+
+export const placesById = new Map(places.map(place => [place.id, place]));
+export const destinations = places.filter(place => place.category !== 'Caminho');
+
+export function findPlace(id: number | string | undefined | null): Place | undefined {
+  if (id === undefined || id === null || String(id).trim() === '') return undefined;
+  const parsed = Number(id);
+  return Number.isInteger(parsed) ? placesById.get(parsed) : undefined;
+}
+
+export function placeLabel(place: Place): string {
+  return place.category === 'Caminho' ? place.name : `${place.name} · ponto ${place.id}`;
+}

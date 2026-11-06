@@ -1,0 +1,23 @@
+// Smoke test da geometria usada pelo ponto virtual de GPS, sem exigir Expo no Node.
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const ts = (() => { try { return require('typescript'); } catch { return require('/opt/nvm/versions/node/v22.16.0/lib/node_modules/typescript'); } })();
+const src = fs.readFileSync(new URL('../src/data/geolocation.ts', import.meta.url), 'utf8');
+const js = ts.transpileModule(src, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 } }).outputText;
+const graph = JSON.parse(fs.readFileSync(new URL('../src/data/grafo-fho.json', import.meta.url), 'utf8'));
+const places = graph.nodes.map(n => ({ id:n.id, latitude:n.lat, longitude:n.lng }));
+const exports = {};
+const run = new Function('require', 'exports', js);
+run((name) => { if (name === './places') return { places }; throw new Error(name); }, exports);
+const { nearestGraphNode, haversineMeters, MAX_CONNECTOR_METERS } = exports;
+const first = places[0];
+assert.equal(nearestGraphNode(first).node.id, first.id);
+assert.ok(Math.abs(haversineMeters(first, first)) < 1e-6);
+assert.ok(haversineMeters(first, { latitude: first.latitude + 0.001, longitude: first.longitude }) > 100);
+const nearby = { latitude: first.latitude + 0.00001, longitude: first.longitude };
+const nearest = nearestGraphNode(nearby);
+assert.ok(nearest.meters < MAX_CONNECTOR_METERS);
+assert.ok(nearestGraphNode({ latitude: -23.55, longitude: -46.63 }).meters > MAX_CONNECTOR_METERS);
+console.log('OK: GPS, Haversine, ponto mais próximo e bloqueio por distância.');

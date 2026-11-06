@@ -1,0 +1,2309 @@
+{
+  "directed": false,
+  "weight_unit": "meters",
+  "weight_method": "haversine_straight_line",
+  "nodes": [
+    {
+      "id": 0,
+      "source_id": 0,
+      "name": "0",
+      "description": "Portaria II",
+      "lat": -22.376103,
+      "lng": -47.3726008
+    },
+    {
+      "id": 1,
+      "source_id": 1,
+      "name": "1",
+      "description": "",
+      "lat": -22.3763064,
+      "lng": -47.3725203
+    },
+    {
+      "id": 2,
+      "source_id": 2,
+      "name": "2",
+      "description": "",
+      "lat": -22.3763225,
+      "lng": -47.3725981
+    },
+    {
+      "id": 3,
+      "source_id": 3,
+      "name": "3",
+      "description": "Bloco C - Entrada",
+      "lat": -22.3765647,
+      "lng": -47.3725123
+    },
+    {
+      "id": 4,
+      "source_id": 4,
+      "name": "4",
+      "description": "",
+      "lat": -22.3767977,
+      "lng": -47.3724306
+    },
+    {
+      "id": 5,
+      "source_id": 5,
+      "name": "5",
+      "description": "Cantina",
+      "lat": -22.3771646,
+      "lng": -47.3722755
+    },
+    {
+      "id": 6,
+      "source_id": 6,
+      "name": "6",
+      "description": "Bloco C - Entrada",
+      "lat": -22.3770815,
+      "lng": -47.3720636
+    },
+    {
+      "id": 7,
+      "source_id": 7,
+      "name": "7",
+      "description": "Bloco C - Entrada",
+      "lat": -22.3770059,
+      "lng": -47.3718638
+    },
+    {
+      "id": 8,
+      "source_id": 8,
+      "name": "8",
+      "description": "Cantina",
+      "lat": -22.3769315,
+      "lng": -47.3716431
+    },
+    {
+      "id": 9,
+      "source_id": 9,
+      "name": "9",
+      "description": "",
+      "lat": -22.3764998,
+      "lng": -47.3717952
+    },
+    {
+      "id": 10,
+      "source_id": 10,
+      "name": "10",
+      "description": "",
+      "lat": -22.3760879,
+      "lng": -47.3719457
+    },
+    {
+      "id": 11,
+      "source_id": 11,
+      "name": "11",
+      "description": "",
+      "lat": -22.3762082,
+      "lng": -47.372281
+    },
+    {
+      "id": 12,
+      "source_id": 12,
+      "name": "12",
+      "description": "Bloco C - Entrada",
+      "lat": -22.3764124,
+      "lng": -47.3722104
+    },
+    {
+      "id": 13,
+      "source_id": 13,
+      "name": "13",
+      "description": "",
+      "lat": -22.3761291,
+      "lng": -47.3721152
+    },
+    {
+      "id": 14,
+      "source_id": 14,
+      "name": "14",
+      "description": "Bloco K - Entrada",
+      "lat": -22.3760361,
+      "lng": -47.3721488
+    },
+    {
+      "id": 15,
+      "source_id": 15,
+      "name": "15",
+      "description": "",
+      "lat": -22.3763092,
+      "lng": -47.3718492
+    },
+    {
+      "id": 16,
+      "source_id": 16,
+      "name": "16",
+      "description": "",
+      "lat": -22.3761929,
+      "lng": -47.371522
+    },
+    {
+      "id": 17,
+      "source_id": 17,
+      "name": "17",
+      "description": "",
+      "lat": -22.3764421,
+      "lng": -47.3706784
+    },
+    {
+      "id": 18,
+      "source_id": 18,
+      "name": "18",
+      "description": "",
+      "lat": -22.3766728,
+      "lng": -47.3707518
+    },
+    {
+      "id": 19,
+      "source_id": 19,
+      "name": "19",
+      "description": "",
+      "lat": -22.3765777,
+      "lng": -47.3710884
+    },
+    {
+      "id": 20,
+      "source_id": 20,
+      "name": "20",
+      "description": "",
+      "lat": -22.3768964,
+      "lng": -47.3714881
+    },
+    {
+      "id": 21,
+      "source_id": 21,
+      "name": "21",
+      "description": "",
+      "lat": -22.3769735,
+      "lng": -47.3712339
+    },
+    {
+      "id": 22,
+      "source_id": 22,
+      "name": "22",
+      "description": "",
+      "lat": -22.3771948,
+      "lng": -47.3712971
+    },
+    {
+      "id": 23,
+      "source_id": 23,
+      "name": "23",
+      "description": "",
+      "lat": -22.3772804,
+      "lng": -47.3709484
+    },
+    {
+      "id": 24,
+      "source_id": 24,
+      "name": "24",
+      "description": "Bloco I",
+      "lat": -22.3775348,
+      "lng": -47.3714226
+    },
+    {
+      "id": 25,
+      "source_id": 25,
+      "name": "25",
+      "description": "Bloco D",
+      "lat": -22.3772678,
+      "lng": -47.3715038
+    },
+    {
+      "id": 26,
+      "source_id": 26,
+      "name": "26",
+      "description": "",
+      "lat": -22.3773856,
+      "lng": -47.3706247
+    },
+    {
+      "id": 27,
+      "source_id": 27,
+      "name": "27",
+      "description": "",
+      "lat": -22.3781125,
+      "lng": -47.3708595
+    },
+    {
+      "id": 28,
+      "source_id": 28,
+      "name": "28",
+      "description": "",
+      "lat": -22.3777307,
+      "lng": -47.3707385
+    },
+    {
+      "id": 29,
+      "source_id": 29,
+      "name": "29",
+      "description": "",
+      "lat": -22.3780494,
+      "lng": -47.3710819
+    },
+    {
+      "id": 30,
+      "source_id": 30,
+      "name": "30",
+      "description": "",
+      "lat": -22.3776476,
+      "lng": -47.3709518
+    },
+    {
+      "id": 31,
+      "source_id": 31,
+      "name": "31",
+      "description": "",
+      "lat": -22.377316,
+      "lng": -47.3708391
+    },
+    {
+      "id": 32,
+      "source_id": 32,
+      "name": "32",
+      "description": "",
+      "lat": -22.3767585,
+      "lng": -47.3706453
+    },
+    {
+      "id": 33,
+      "source_id": 33,
+      "name": "33",
+      "description": "",
+      "lat": -22.3767297,
+      "lng": -47.3707592
+    },
+    {
+      "id": 34,
+      "source_id": 34,
+      "name": "34",
+      "description": "",
+      "lat": -22.3766231,
+      "lng": -47.3705956
+    },
+    {
+      "id": 35,
+      "source_id": 35,
+      "name": "35",
+      "description": "Bloco A - Entrada",
+      "lat": -22.376695,
+      "lng": -47.3703931
+    },
+    {
+      "id": 36,
+      "source_id": 36,
+      "name": "36",
+      "description": "",
+      "lat": -22.3772835,
+      "lng": -47.3705889
+    },
+    {
+      "id": 37,
+      "source_id": 37,
+      "name": "37",
+      "description": "",
+      "lat": -22.3774815,
+      "lng": -47.370299
+    },
+    {
+      "id": 38,
+      "source_id": 38,
+      "name": "38",
+      "description": "",
+      "lat": -22.3778926,
+      "lng": -47.3701935
+    },
+    {
+      "id": 39,
+      "source_id": 39,
+      "name": "39",
+      "description": "",
+      "lat": -22.3779434,
+      "lng": -47.3700111
+    },
+    {
+      "id": 40,
+      "source_id": 40,
+      "name": "40",
+      "description": "",
+      "lat": -22.3785177,
+      "lng": -47.3702092
+    },
+    {
+      "id": 41,
+      "source_id": 41,
+      "name": "41",
+      "description": "",
+      "lat": -22.3783458,
+      "lng": -47.3707081
+    },
+    {
+      "id": 42,
+      "source_id": 42,
+      "name": "42",
+      "description": "",
+      "lat": -22.3781474,
+      "lng": -47.3711051
+    },
+    {
+      "id": 43,
+      "source_id": 43,
+      "name": "43",
+      "description": "",
+      "lat": -22.3779798,
+      "lng": -47.3698954
+    },
+    {
+      "id": 44,
+      "source_id": 44,
+      "name": "44",
+      "description": "Bloco H - Entrada",
+      "lat": -22.3781691,
+      "lng": -47.3699553
+    },
+    {
+      "id": 45,
+      "source_id": 45,
+      "name": "45",
+      "description": "",
+      "lat": -22.378531,
+      "lng": -47.3700841
+    },
+    {
+      "id": 46,
+      "source_id": 46,
+      "name": "46",
+      "description": "",
+      "lat": -22.3786275,
+      "lng": -47.3700386
+    },
+    {
+      "id": 47,
+      "source_id": 47,
+      "name": "47",
+      "description": "",
+      "lat": -22.3787044,
+      "lng": -47.3698603
+    },
+    {
+      "id": 48,
+      "source_id": 48,
+      "name": "48",
+      "description": "Bloco H - Entrada",
+      "lat": -22.3782292,
+      "lng": -47.3697057
+    },
+    {
+      "id": 49,
+      "source_id": 49,
+      "name": "49",
+      "description": "Bloco H - Entrada",
+      "lat": -22.3786261,
+      "lng": -47.3698344
+    },
+    {
+      "id": 50,
+      "source_id": 50,
+      "name": "50",
+      "description": "",
+      "lat": -22.3787823,
+      "lng": -47.3696386
+    },
+    {
+      "id": 51,
+      "source_id": 51,
+      "name": "51",
+      "description": "",
+      "lat": -22.377827,
+      "lng": -47.3695737
+    },
+    {
+      "id": 52,
+      "source_id": 52,
+      "name": "52",
+      "description": "",
+      "lat": -22.3777414,
+      "lng": -47.3695804
+    },
+    {
+      "id": 53,
+      "source_id": 53,
+      "name": "53",
+      "description": "",
+      "lat": -22.3776831,
+      "lng": -47.3697159
+    },
+    {
+      "id": 54,
+      "source_id": 54,
+      "name": "54",
+      "description": "",
+      "lat": -22.3778208,
+      "lng": -47.3697615
+    },
+    {
+      "id": 55,
+      "source_id": 55,
+      "name": "55",
+      "description": "",
+      "lat": -22.37776,
+      "lng": -47.3697414
+    },
+    {
+      "id": 56,
+      "source_id": 56,
+      "name": "56",
+      "description": "",
+      "lat": -22.3777836,
+      "lng": -47.3698433
+    },
+    {
+      "id": 57,
+      "source_id": 57,
+      "name": "57",
+      "description": "",
+      "lat": -22.3773469,
+      "lng": -47.3695995
+    },
+    {
+      "id": 58,
+      "source_id": 58,
+      "name": "58",
+      "description": "Bloco E - Entrada",
+      "lat": -22.3773655,
+      "lng": -47.3695365
+    },
+    {
+      "id": 59,
+      "source_id": 59,
+      "name": "59",
+      "description": "Bloco E - Entrada",
+      "lat": -22.37679,
+      "lng": -47.3694015
+    },
+    {
+      "id": 60,
+      "source_id": 60,
+      "name": "60",
+      "description": "Quadra",
+      "lat": -22.3764806,
+      "lng": -47.3693066
+    },
+    {
+      "id": 61,
+      "source_id": 61,
+      "name": "61",
+      "description": "",
+      "lat": -22.3764707,
+      "lng": -47.3693932
+    },
+    {
+      "id": 62,
+      "source_id": 62,
+      "name": "62",
+      "description": "",
+      "lat": -22.3764347,
+      "lng": -47.3695032
+    },
+    {
+      "id": 63,
+      "source_id": 63,
+      "name": "63",
+      "description": "",
+      "lat": -22.3765552,
+      "lng": -47.3695442
+    },
+    {
+      "id": 64,
+      "source_id": 64,
+      "name": "64",
+      "description": "Bloco J - Entrada",
+      "lat": -22.3765292,
+      "lng": -47.3696166
+    },
+    {
+      "id": 65,
+      "source_id": 65,
+      "name": "65",
+      "description": "Bloco J - Entrada",
+      "lat": -22.3768566,
+      "lng": -47.3696518
+    },
+    {
+      "id": 66,
+      "source_id": 66,
+      "name": "66",
+      "description": "Bloco J - Entrada",
+      "lat": -22.3771535,
+      "lng": -47.3697422
+    },
+    {
+      "id": 67,
+      "source_id": 67,
+      "name": "67",
+      "description": "Bloco J - Entrada",
+      "lat": -22.3774538,
+      "lng": -47.3698456
+    },
+    {
+      "id": 68,
+      "source_id": 68,
+      "name": "68",
+      "description": "Bloco J - Entrada",
+      "lat": -22.3776646,
+      "lng": -47.3699167
+    },
+    {
+      "id": 69,
+      "source_id": 69,
+      "name": "69",
+      "description": "",
+      "lat": -22.3762577,
+      "lng": -47.3694444
+    },
+    {
+      "id": 70,
+      "source_id": 70,
+      "name": "70",
+      "description": "",
+      "lat": -22.375784,
+      "lng": -47.3692916
+    },
+    {
+      "id": 71,
+      "source_id": 71,
+      "name": "71",
+      "description": "",
+      "lat": -22.3757418,
+      "lng": -47.3695356
+    },
+    {
+      "id": 72,
+      "source_id": 72,
+      "name": "72",
+      "description": "Bloco A - Entrada",
+      "lat": -22.3758311,
+      "lng": -47.3696073
+    },
+    {
+      "id": 73,
+      "source_id": 73,
+      "name": "73",
+      "description": "",
+      "lat": -22.3750459,
+      "lng": -47.3690456
+    },
+    {
+      "id": 74,
+      "source_id": 74,
+      "name": "74",
+      "description": "",
+      "lat": -22.3759515,
+      "lng": -47.3715705
+    },
+    {
+      "id": 75,
+      "source_id": 75,
+      "name": "75",
+      "description": "",
+      "lat": -22.3756158,
+      "lng": -47.3714495
+    },
+    {
+      "id": 76,
+      "source_id": 76,
+      "name": "76",
+      "description": "",
+      "lat": -22.3757671,
+      "lng": -47.3709278
+    },
+    {
+      "id": 77,
+      "source_id": 77,
+      "name": "77",
+      "description": "",
+      "lat": -22.3756889,
+      "lng": -47.3708631
+    },
+    {
+      "id": 78,
+      "source_id": 78,
+      "name": "78",
+      "description": "",
+      "lat": -22.3757906,
+      "lng": -47.3704622
+    },
+    {
+      "id": 79,
+      "source_id": 79,
+      "name": "79",
+      "description": "",
+      "lat": -22.3758435,
+      "lng": -47.3704654
+    },
+    {
+      "id": 80,
+      "source_id": 80,
+      "name": "80",
+      "description": "Restaurante",
+      "lat": -22.3763048,
+      "lng": -47.3706143
+    },
+    {
+      "id": 81,
+      "source_id": 81,
+      "name": "81",
+      "description": "",
+      "lat": -22.3763361,
+      "lng": -47.3705079
+    },
+    {
+      "id": 82,
+      "source_id": 82,
+      "name": "82",
+      "description": "",
+      "lat": -22.3758673,
+      "lng": -47.3703631
+    },
+    {
+      "id": 83,
+      "source_id": 83,
+      "name": "83",
+      "description": "Bloco A - Entrada",
+      "lat": -22.3757746,
+      "lng": -47.37013
+    },
+    {
+      "id": 84,
+      "source_id": 84,
+      "name": "84",
+      "description": "",
+      "lat": -22.3755518,
+      "lng": -47.3703817
+    },
+    {
+      "id": 85,
+      "source_id": 85,
+      "name": "85",
+      "description": "",
+      "lat": -22.3754695,
+      "lng": -47.3707259
+    },
+    {
+      "id": 86,
+      "source_id": 86,
+      "name": "86",
+      "description": "",
+      "lat": -22.3753116,
+      "lng": -47.3712601
+    },
+    {
+      "id": 87,
+      "source_id": 87,
+      "name": "87",
+      "description": "",
+      "lat": -22.3748312,
+      "lng": -47.3705096
+    },
+    {
+      "id": 88,
+      "source_id": 88,
+      "name": "88",
+      "description": "",
+      "lat": -22.374623,
+      "lng": -47.3712067
+    },
+    {
+      "id": 89,
+      "source_id": 89,
+      "name": "89",
+      "description": "",
+      "lat": -22.3752666,
+      "lng": -47.3714521
+    },
+    {
+      "id": 90,
+      "source_id": 90,
+      "name": "90",
+      "description": "",
+      "lat": -22.3749397,
+      "lng": -47.3701715
+    },
+    {
+      "id": 91,
+      "source_id": 91,
+      "name": "91",
+      "description": "",
+      "lat": -22.3748033,
+      "lng": -47.3701339
+    },
+    {
+      "id": 92,
+      "source_id": 92,
+      "name": "92",
+      "description": "",
+      "lat": -22.374719,
+      "lng": -47.3704691
+    },
+    {
+      "id": 93,
+      "source_id": 94,
+      "name": "93",
+      "description": "",
+      "lat": -22.3748327,
+      "lng": -47.3699999
+    },
+    {
+      "id": 94,
+      "source_id": 95,
+      "name": "94",
+      "description": "",
+      "lat": -22.3749555,
+      "lng": -47.3700481
+    },
+    {
+      "id": 95,
+      "source_id": 107,
+      "name": "95",
+      "description": "Bloco A - Entrada",
+      "lat": -22.3751447,
+      "lng": -47.369745
+    },
+    {
+      "id": 96,
+      "source_id": 96,
+      "name": "96",
+      "description": "Portaria I",
+      "lat": -22.3743731,
+      "lng": -47.36999
+    },
+    {
+      "id": 97,
+      "source_id": 97,
+      "name": "97",
+      "description": "",
+      "lat": -22.3744289,
+      "lng": -47.369838
+    },
+    {
+      "id": 98,
+      "source_id": 98,
+      "name": "98",
+      "description": "",
+      "lat": -22.3745393,
+      "lng": -47.3698756
+    },
+    {
+      "id": 99,
+      "source_id": 99,
+      "name": "99",
+      "description": "",
+      "lat": -22.3746323,
+      "lng": -47.3696852
+    },
+    {
+      "id": 100,
+      "source_id": 100,
+      "name": "100",
+      "description": "",
+      "lat": -22.3746906,
+      "lng": -47.3699426
+    },
+    {
+      "id": 101,
+      "source_id": 101,
+      "name": "101",
+      "description": "",
+      "lat": -22.3748022,
+      "lng": -47.3695041
+    },
+    {
+      "id": 102,
+      "source_id": 102,
+      "name": "102",
+      "description": "",
+      "lat": -22.3746621,
+      "lng": -47.3695899
+    },
+    {
+      "id": 103,
+      "source_id": 103,
+      "name": "103",
+      "description": "Bloco B - Entrada",
+      "lat": -22.3746968,
+      "lng": -47.3694706
+    },
+    {
+      "id": 104,
+      "source_id": 104,
+      "name": "104",
+      "description": "",
+      "lat": -22.3749391,
+      "lng": -47.3690964
+    },
+    {
+      "id": 105,
+      "source_id": 105,
+      "name": "105",
+      "description": "",
+      "lat": -22.3748312,
+      "lng": -47.3690562
+    },
+    {
+      "id": 106,
+      "source_id": 106,
+      "name": "106",
+      "description": "",
+      "lat": -22.3750393,
+      "lng": -47.3697329
+    },
+    {
+      "id": 107,
+      "source_id": 108,
+      "name": "107",
+      "description": "",
+      "lat": -22.3750721,
+      "lng": -47.3689363
+    },
+    {
+      "id": 108,
+      "source_id": 109,
+      "name": "108",
+      "description": "",
+      "lat": -22.3768717,
+      "lng": -47.3692162
+    },
+    {
+      "id": 109,
+      "source_id": 110,
+      "name": "109",
+      "description": "",
+      "lat": -22.3769734,
+      "lng": -47.3691022
+    },
+    {
+      "id": 110,
+      "source_id": 111,
+      "name": "110",
+      "description": "Conjunto Poliesportivo",
+      "lat": -22.3770453,
+      "lng": -47.3689587
+    },
+    {
+      "id": 111,
+      "source_id": 112,
+      "name": "111",
+      "description": "",
+      "lat": -22.3762884,
+      "lng": -47.3693371
+    },
+    {
+      "id": 112,
+      "source_id": 103,
+      "name": "112",
+      "description": "",
+      "lat": -22.3761507,
+      "lng": -47.3692915
+    },
+    {
+      "id": 113,
+      "source_id": 104,
+      "name": "113",
+      "description": "",
+      "lat": -22.3762425,
+      "lng": -47.3689858
+    },
+    {
+      "id": 114,
+      "source_id": 105,
+      "name": "114",
+      "description": "Quadra",
+      "lat": -22.376338,
+      "lng": -47.3690193
+    },
+    {
+      "id": 115,
+      "source_id": 106,
+      "name": "115",
+      "description": "",
+      "lat": -22.376395,
+      "lng": -47.3688221
+    },
+    {
+      "id": 116,
+      "source_id": 107,
+      "name": "116",
+      "description": "Bloco K - Entrada",
+      "lat": -22.376163,
+      "lng": -47.3724872
+    },
+    {
+      "id": 117,
+      "source_id": 108,
+      "name": "117",
+      "description": "Bloco D - Entrada",
+      "lat": -22.3771072,
+      "lng": -47.3719751
+    }
+  ],
+  "adjacency": {
+    "0": [
+      {
+        "node": 1,
+        "weight_m": 24.08
+      }
+    ],
+    "1": [
+      {
+        "node": 0,
+        "weight_m": 24.08
+      },
+      {
+        "node": 2,
+        "weight_m": 8.2
+      },
+      {
+        "node": 11,
+        "weight_m": 26.92
+      },
+      {
+        "node": 116,
+        "weight_m": 16.3
+      }
+    ],
+    "2": [
+      {
+        "node": 1,
+        "weight_m": 8.2
+      },
+      {
+        "node": 3,
+        "weight_m": 28.34
+      }
+    ],
+    "3": [
+      {
+        "node": 2,
+        "weight_m": 28.34
+      },
+      {
+        "node": 4,
+        "weight_m": 27.24
+      }
+    ],
+    "4": [
+      {
+        "node": 3,
+        "weight_m": 27.24
+      },
+      {
+        "node": 5,
+        "weight_m": 43.8
+      }
+    ],
+    "5": [
+      {
+        "node": 4,
+        "weight_m": 43.8
+      },
+      {
+        "node": 6,
+        "weight_m": 23.67
+      }
+    ],
+    "6": [
+      {
+        "node": 5,
+        "weight_m": 23.67
+      },
+      {
+        "node": 7,
+        "weight_m": 22.2
+      },
+      {
+        "node": 117,
+        "weight_m": 9.54
+      }
+    ],
+    "7": [
+      {
+        "node": 6,
+        "weight_m": 22.2
+      },
+      {
+        "node": 8,
+        "weight_m": 24.15
+      },
+      {
+        "node": 117,
+        "weight_m": 16.06
+      }
+    ],
+    "8": [
+      {
+        "node": 7,
+        "weight_m": 24.15
+      },
+      {
+        "node": 9,
+        "weight_m": 50.49
+      },
+      {
+        "node": 20,
+        "weight_m": 16.41
+      },
+      {
+        "node": 25,
+        "weight_m": 40.04
+      }
+    ],
+    "9": [
+      {
+        "node": 8,
+        "weight_m": 50.49
+      },
+      {
+        "node": 15,
+        "weight_m": 21.91
+      }
+    ],
+    "10": [
+      {
+        "node": 13,
+        "weight_m": 18.02
+      },
+      {
+        "node": 15,
+        "weight_m": 26.53
+      },
+      {
+        "node": 74,
+        "weight_m": 41.45
+      }
+    ],
+    "11": [
+      {
+        "node": 1,
+        "weight_m": 26.92
+      },
+      {
+        "node": 12,
+        "weight_m": 23.84
+      },
+      {
+        "node": 13,
+        "weight_m": 19.18
+      },
+      {
+        "node": 116,
+        "weight_m": 21.79
+      }
+    ],
+    "12": [
+      {
+        "node": 11,
+        "weight_m": 23.84
+      }
+    ],
+    "13": [
+      {
+        "node": 10,
+        "weight_m": 18.02
+      },
+      {
+        "node": 11,
+        "weight_m": 19.18
+      },
+      {
+        "node": 14,
+        "weight_m": 10.9
+      }
+    ],
+    "14": [
+      {
+        "node": 13,
+        "weight_m": 10.9
+      }
+    ],
+    "15": [
+      {
+        "node": 9,
+        "weight_m": 21.91
+      },
+      {
+        "node": 10,
+        "weight_m": 26.53
+      },
+      {
+        "node": 16,
+        "weight_m": 36.04
+      }
+    ],
+    "16": [
+      {
+        "node": 15,
+        "weight_m": 36.04
+      },
+      {
+        "node": 17,
+        "weight_m": 91.06
+      }
+    ],
+    "17": [
+      {
+        "node": 16,
+        "weight_m": 91.06
+      },
+      {
+        "node": 80,
+        "weight_m": 16.63
+      }
+    ],
+    "18": [
+      {
+        "node": 19,
+        "weight_m": 36.19
+      },
+      {
+        "node": 33,
+        "weight_m": 6.37
+      }
+    ],
+    "19": [
+      {
+        "node": 18,
+        "weight_m": 36.19
+      },
+      {
+        "node": 21,
+        "weight_m": 46.48
+      }
+    ],
+    "20": [
+      {
+        "node": 8,
+        "weight_m": 16.41
+      },
+      {
+        "node": 21,
+        "weight_m": 27.51
+      }
+    ],
+    "21": [
+      {
+        "node": 19,
+        "weight_m": 46.48
+      },
+      {
+        "node": 20,
+        "weight_m": 27.51
+      },
+      {
+        "node": 22,
+        "weight_m": 25.45
+      }
+    ],
+    "22": [
+      {
+        "node": 21,
+        "weight_m": 25.45
+      },
+      {
+        "node": 23,
+        "weight_m": 37.1
+      },
+      {
+        "node": 24,
+        "weight_m": 39.95
+      },
+      {
+        "node": 25,
+        "weight_m": 22.75
+      }
+    ],
+    "23": [
+      {
+        "node": 22,
+        "weight_m": 37.1
+      },
+      {
+        "node": 31,
+        "weight_m": 11.92
+      },
+      {
+        "node": 33,
+        "weight_m": 64.25
+      }
+    ],
+    "24": [
+      {
+        "node": 22,
+        "weight_m": 39.95
+      }
+    ],
+    "25": [
+      {
+        "node": 8,
+        "weight_m": 40.04
+      },
+      {
+        "node": 22,
+        "weight_m": 22.75
+      }
+    ],
+    "26": [
+      {
+        "node": 28,
+        "weight_m": 40.12
+      },
+      {
+        "node": 31,
+        "weight_m": 23.36
+      },
+      {
+        "node": 36,
+        "weight_m": 11.93
+      },
+      {
+        "node": 37,
+        "weight_m": 35.15
+      }
+    ],
+    "27": [
+      {
+        "node": 28,
+        "weight_m": 44.24
+      },
+      {
+        "node": 41,
+        "weight_m": 30.25
+      }
+    ],
+    "28": [
+      {
+        "node": 26,
+        "weight_m": 40.12
+      },
+      {
+        "node": 27,
+        "weight_m": 44.24
+      }
+    ],
+    "29": [
+      {
+        "node": 30,
+        "weight_m": 46.64
+      },
+      {
+        "node": 42,
+        "weight_m": 11.16
+      }
+    ],
+    "30": [
+      {
+        "node": 29,
+        "weight_m": 46.64
+      },
+      {
+        "node": 31,
+        "weight_m": 38.65
+      }
+    ],
+    "31": [
+      {
+        "node": 23,
+        "weight_m": 11.92
+      },
+      {
+        "node": 26,
+        "weight_m": 23.36
+      },
+      {
+        "node": 30,
+        "weight_m": 38.65
+      },
+      {
+        "node": 32,
+        "weight_m": 65.12
+      }
+    ],
+    "32": [
+      {
+        "node": 31,
+        "weight_m": 65.12
+      },
+      {
+        "node": 33,
+        "weight_m": 12.14
+      },
+      {
+        "node": 35,
+        "weight_m": 26.88
+      }
+    ],
+    "33": [
+      {
+        "node": 18,
+        "weight_m": 6.37
+      },
+      {
+        "node": 23,
+        "weight_m": 64.25
+      },
+      {
+        "node": 32,
+        "weight_m": 12.14
+      }
+    ],
+    "34": [
+      {
+        "node": 35,
+        "weight_m": 22.3
+      },
+      {
+        "node": 81,
+        "weight_m": 33.16
+      }
+    ],
+    "35": [
+      {
+        "node": 32,
+        "weight_m": 26.88
+      },
+      {
+        "node": 34,
+        "weight_m": 22.3
+      },
+      {
+        "node": 36,
+        "weight_m": 68.47
+      }
+    ],
+    "36": [
+      {
+        "node": 26,
+        "weight_m": 11.93
+      },
+      {
+        "node": 35,
+        "weight_m": 68.47
+      }
+    ],
+    "37": [
+      {
+        "node": 26,
+        "weight_m": 35.15
+      },
+      {
+        "node": 38,
+        "weight_m": 46.98
+      }
+    ],
+    "38": [
+      {
+        "node": 37,
+        "weight_m": 46.98
+      },
+      {
+        "node": 39,
+        "weight_m": 19.59
+      }
+    ],
+    "39": [
+      {
+        "node": 38,
+        "weight_m": 19.59
+      },
+      {
+        "node": 40,
+        "weight_m": 67.03
+      },
+      {
+        "node": 43,
+        "weight_m": 12.57
+      },
+      {
+        "node": 68,
+        "weight_m": 32.49
+      }
+    ],
+    "40": [
+      {
+        "node": 39,
+        "weight_m": 67.03
+      },
+      {
+        "node": 41,
+        "weight_m": 54.74
+      }
+    ],
+    "41": [
+      {
+        "node": 27,
+        "weight_m": 30.25
+      },
+      {
+        "node": 40,
+        "weight_m": 54.74
+      },
+      {
+        "node": 42,
+        "weight_m": 46.4
+      }
+    ],
+    "42": [
+      {
+        "node": 29,
+        "weight_m": 11.16
+      },
+      {
+        "node": 41,
+        "weight_m": 46.4
+      }
+    ],
+    "43": [
+      {
+        "node": 39,
+        "weight_m": 12.57
+      },
+      {
+        "node": 44,
+        "weight_m": 21.93
+      },
+      {
+        "node": 56,
+        "weight_m": 22.46
+      }
+    ],
+    "44": [
+      {
+        "node": 43,
+        "weight_m": 21.93
+      },
+      {
+        "node": 45,
+        "weight_m": 42.36
+      }
+    ],
+    "45": [
+      {
+        "node": 44,
+        "weight_m": 42.36
+      },
+      {
+        "node": 46,
+        "weight_m": 11.71
+      }
+    ],
+    "46": [
+      {
+        "node": 45,
+        "weight_m": 11.71
+      },
+      {
+        "node": 47,
+        "weight_m": 20.23
+      }
+    ],
+    "47": [
+      {
+        "node": 46,
+        "weight_m": 20.23
+      },
+      {
+        "node": 49,
+        "weight_m": 9.1
+      },
+      {
+        "node": 50,
+        "weight_m": 24.39
+      }
+    ],
+    "48": [
+      {
+        "node": 49,
+        "weight_m": 46.07
+      },
+      {
+        "node": 51,
+        "weight_m": 46.74
+      }
+    ],
+    "49": [
+      {
+        "node": 47,
+        "weight_m": 9.1
+      },
+      {
+        "node": 48,
+        "weight_m": 46.07
+      }
+    ],
+    "50": [
+      {
+        "node": 47,
+        "weight_m": 24.39
+      }
+    ],
+    "51": [
+      {
+        "node": 48,
+        "weight_m": 46.74
+      },
+      {
+        "node": 52,
+        "weight_m": 9.54
+      }
+    ],
+    "52": [
+      {
+        "node": 51,
+        "weight_m": 9.54
+      },
+      {
+        "node": 53,
+        "weight_m": 15.37
+      }
+    ],
+    "53": [
+      {
+        "node": 52,
+        "weight_m": 15.37
+      },
+      {
+        "node": 55,
+        "weight_m": 8.94
+      },
+      {
+        "node": 57,
+        "weight_m": 39.25
+      }
+    ],
+    "54": [
+      {
+        "node": 55,
+        "weight_m": 7.07
+      },
+      {
+        "node": 56,
+        "weight_m": 9.37
+      }
+    ],
+    "55": [
+      {
+        "node": 53,
+        "weight_m": 8.94
+      },
+      {
+        "node": 54,
+        "weight_m": 7.07
+      }
+    ],
+    "56": [
+      {
+        "node": 43,
+        "weight_m": 22.46
+      },
+      {
+        "node": 54,
+        "weight_m": 9.37
+      }
+    ],
+    "57": [
+      {
+        "node": 53,
+        "weight_m": 39.25
+      },
+      {
+        "node": 58,
+        "weight_m": 6.8
+      },
+      {
+        "node": 59,
+        "weight_m": 65.19
+      }
+    ],
+    "58": [
+      {
+        "node": 57,
+        "weight_m": 6.8
+      }
+    ],
+    "59": [
+      {
+        "node": 57,
+        "weight_m": 65.19
+      },
+      {
+        "node": 60,
+        "weight_m": 35.76
+      },
+      {
+        "node": 108,
+        "weight_m": 21.11
+      }
+    ],
+    "60": [
+      {
+        "node": 59,
+        "weight_m": 35.76
+      },
+      {
+        "node": 61,
+        "weight_m": 8.97
+      }
+    ],
+    "61": [
+      {
+        "node": 60,
+        "weight_m": 8.97
+      },
+      {
+        "node": 62,
+        "weight_m": 12.0
+      },
+      {
+        "node": 111,
+        "weight_m": 21.08
+      }
+    ],
+    "62": [
+      {
+        "node": 61,
+        "weight_m": 12.0
+      },
+      {
+        "node": 63,
+        "weight_m": 14.05
+      },
+      {
+        "node": 69,
+        "weight_m": 20.59
+      }
+    ],
+    "63": [
+      {
+        "node": 62,
+        "weight_m": 14.05
+      },
+      {
+        "node": 64,
+        "weight_m": 7.99
+      },
+      {
+        "node": 65,
+        "weight_m": 35.29
+      }
+    ],
+    "64": [
+      {
+        "node": 63,
+        "weight_m": 7.99
+      }
+    ],
+    "65": [
+      {
+        "node": 63,
+        "weight_m": 35.29
+      },
+      {
+        "node": 66,
+        "weight_m": 34.3
+      }
+    ],
+    "66": [
+      {
+        "node": 65,
+        "weight_m": 34.3
+      },
+      {
+        "node": 67,
+        "weight_m": 35.04
+      }
+    ],
+    "67": [
+      {
+        "node": 66,
+        "weight_m": 35.04
+      },
+      {
+        "node": 68,
+        "weight_m": 24.55
+      }
+    ],
+    "68": [
+      {
+        "node": 39,
+        "weight_m": 32.49
+      },
+      {
+        "node": 67,
+        "weight_m": 24.55
+      }
+    ],
+    "69": [
+      {
+        "node": 62,
+        "weight_m": 20.59
+      },
+      {
+        "node": 70,
+        "weight_m": 54.97
+      }
+    ],
+    "70": [
+      {
+        "node": 69,
+        "weight_m": 54.97
+      },
+      {
+        "node": 71,
+        "weight_m": 25.52
+      },
+      {
+        "node": 73,
+        "weight_m": 85.88
+      }
+    ],
+    "71": [
+      {
+        "node": 70,
+        "weight_m": 25.52
+      },
+      {
+        "node": 72,
+        "weight_m": 12.37
+      }
+    ],
+    "72": [
+      {
+        "node": 71,
+        "weight_m": 12.37
+      }
+    ],
+    "73": [
+      {
+        "node": 70,
+        "weight_m": 85.88
+      },
+      {
+        "node": 104,
+        "weight_m": 12.97
+      },
+      {
+        "node": 107,
+        "weight_m": 11.61
+      }
+    ],
+    "74": [
+      {
+        "node": 10,
+        "weight_m": 41.45
+      },
+      {
+        "node": 75,
+        "weight_m": 39.35
+      }
+    ],
+    "75": [
+      {
+        "node": 74,
+        "weight_m": 39.35
+      },
+      {
+        "node": 76,
+        "weight_m": 56.22
+      },
+      {
+        "node": 89,
+        "weight_m": 38.83
+      }
+    ],
+    "76": [
+      {
+        "node": 75,
+        "weight_m": 56.22
+      },
+      {
+        "node": 77,
+        "weight_m": 10.95
+      }
+    ],
+    "77": [
+      {
+        "node": 76,
+        "weight_m": 10.95
+      },
+      {
+        "node": 78,
+        "weight_m": 42.74
+      }
+    ],
+    "78": [
+      {
+        "node": 77,
+        "weight_m": 42.74
+      },
+      {
+        "node": 79,
+        "weight_m": 5.89
+      },
+      {
+        "node": 84,
+        "weight_m": 27.81
+      }
+    ],
+    "79": [
+      {
+        "node": 78,
+        "weight_m": 5.89
+      },
+      {
+        "node": 80,
+        "weight_m": 53.53
+      },
+      {
+        "node": 82,
+        "weight_m": 10.85
+      }
+    ],
+    "80": [
+      {
+        "node": 17,
+        "weight_m": 16.63
+      },
+      {
+        "node": 79,
+        "weight_m": 53.53
+      },
+      {
+        "node": 81,
+        "weight_m": 11.48
+      }
+    ],
+    "81": [
+      {
+        "node": 34,
+        "weight_m": 33.16
+      },
+      {
+        "node": 80,
+        "weight_m": 11.48
+      },
+      {
+        "node": 82,
+        "weight_m": 54.21
+      }
+    ],
+    "82": [
+      {
+        "node": 79,
+        "weight_m": 10.85
+      },
+      {
+        "node": 81,
+        "weight_m": 54.21
+      },
+      {
+        "node": 83,
+        "weight_m": 26.09
+      }
+    ],
+    "83": [
+      {
+        "node": 82,
+        "weight_m": 26.09
+      }
+    ],
+    "84": [
+      {
+        "node": 78,
+        "weight_m": 27.81
+      },
+      {
+        "node": 85,
+        "weight_m": 36.56
+      },
+      {
+        "node": 90,
+        "weight_m": 71.41
+      }
+    ],
+    "85": [
+      {
+        "node": 84,
+        "weight_m": 36.56
+      },
+      {
+        "node": 86,
+        "weight_m": 57.67
+      }
+    ],
+    "86": [
+      {
+        "node": 85,
+        "weight_m": 57.67
+      },
+      {
+        "node": 89,
+        "weight_m": 20.37
+      }
+    ],
+    "87": [
+      {
+        "node": 88,
+        "weight_m": 75.32
+      },
+      {
+        "node": 90,
+        "weight_m": 36.8
+      },
+      {
+        "node": 92,
+        "weight_m": 13.15
+      }
+    ],
+    "88": [
+      {
+        "node": 87,
+        "weight_m": 75.32
+      },
+      {
+        "node": 89,
+        "weight_m": 75.88
+      }
+    ],
+    "89": [
+      {
+        "node": 75,
+        "weight_m": 38.83
+      },
+      {
+        "node": 86,
+        "weight_m": 20.37
+      },
+      {
+        "node": 88,
+        "weight_m": 75.88
+      }
+    ],
+    "90": [
+      {
+        "node": 84,
+        "weight_m": 71.41
+      },
+      {
+        "node": 87,
+        "weight_m": 36.8
+      },
+      {
+        "node": 91,
+        "weight_m": 15.65
+      },
+      {
+        "node": 94,
+        "weight_m": 12.81
+      }
+    ],
+    "91": [
+      {
+        "node": 90,
+        "weight_m": 15.65
+      },
+      {
+        "node": 92,
+        "weight_m": 35.72
+      },
+      {
+        "node": 93,
+        "weight_m": 14.16
+      },
+      {
+        "node": 96,
+        "weight_m": 50.07
+      }
+    ],
+    "92": [
+      {
+        "node": 87,
+        "weight_m": 13.15
+      },
+      {
+        "node": 91,
+        "weight_m": 35.72
+      }
+    ],
+    "93": [
+      {
+        "node": 91,
+        "weight_m": 14.16
+      },
+      {
+        "node": 94,
+        "weight_m": 14.53
+      },
+      {
+        "node": 100,
+        "weight_m": 16.86
+      }
+    ],
+    "94": [
+      {
+        "node": 90,
+        "weight_m": 12.81
+      },
+      {
+        "node": 93,
+        "weight_m": 14.53
+      },
+      {
+        "node": 106,
+        "weight_m": 33.72
+      }
+    ],
+    "95": [
+      {
+        "node": 106,
+        "weight_m": 11.79
+      }
+    ],
+    "96": [
+      {
+        "node": 91,
+        "weight_m": 50.07
+      },
+      {
+        "node": 97,
+        "weight_m": 16.82
+      }
+    ],
+    "97": [
+      {
+        "node": 96,
+        "weight_m": 16.82
+      },
+      {
+        "node": 98,
+        "weight_m": 12.87
+      }
+    ],
+    "98": [
+      {
+        "node": 97,
+        "weight_m": 12.87
+      },
+      {
+        "node": 99,
+        "weight_m": 22.14
+      },
+      {
+        "node": 100,
+        "weight_m": 18.18
+      }
+    ],
+    "99": [
+      {
+        "node": 98,
+        "weight_m": 22.14
+      },
+      {
+        "node": 102,
+        "weight_m": 10.34
+      }
+    ],
+    "100": [
+      {
+        "node": 93,
+        "weight_m": 16.86
+      },
+      {
+        "node": 98,
+        "weight_m": 18.18
+      },
+      {
+        "node": 101,
+        "weight_m": 46.76
+      }
+    ],
+    "101": [
+      {
+        "node": 100,
+        "weight_m": 46.76
+      },
+      {
+        "node": 103,
+        "weight_m": 12.22
+      },
+      {
+        "node": 104,
+        "weight_m": 44.6
+      }
+    ],
+    "102": [
+      {
+        "node": 99,
+        "weight_m": 10.34
+      },
+      {
+        "node": 103,
+        "weight_m": 12.86
+      }
+    ],
+    "103": [
+      {
+        "node": 101,
+        "weight_m": 12.22
+      },
+      {
+        "node": 102,
+        "weight_m": 12.86
+      },
+      {
+        "node": 105,
+        "weight_m": 45.15
+      }
+    ],
+    "104": [
+      {
+        "node": 73,
+        "weight_m": 12.97
+      },
+      {
+        "node": 101,
+        "weight_m": 44.6
+      },
+      {
+        "node": 105,
+        "weight_m": 12.69
+      }
+    ],
+    "105": [
+      {
+        "node": 103,
+        "weight_m": 45.15
+      },
+      {
+        "node": 104,
+        "weight_m": 12.69
+      }
+    ],
+    "106": [
+      {
+        "node": 94,
+        "weight_m": 33.72
+      },
+      {
+        "node": 95,
+        "weight_m": 11.79
+      }
+    ],
+    "107": [
+      {
+        "node": 73,
+        "weight_m": 11.61
+      },
+      {
+        "node": 112,
+        "weight_m": 125.37
+      }
+    ],
+    "108": [
+      {
+        "node": 59,
+        "weight_m": 21.11
+      },
+      {
+        "node": 109,
+        "weight_m": 16.29
+      }
+    ],
+    "109": [
+      {
+        "node": 108,
+        "weight_m": 16.29
+      },
+      {
+        "node": 110,
+        "weight_m": 16.78
+      }
+    ],
+    "110": [
+      {
+        "node": 109,
+        "weight_m": 16.78
+      }
+    ],
+    "111": [
+      {
+        "node": 61,
+        "weight_m": 21.08
+      },
+      {
+        "node": 112,
+        "weight_m": 16.01
+      }
+    ],
+    "112": [
+      {
+        "node": 107,
+        "weight_m": 125.37
+      },
+      {
+        "node": 111,
+        "weight_m": 16.01
+      },
+      {
+        "node": 113,
+        "weight_m": 33.05
+      }
+    ],
+    "113": [
+      {
+        "node": 112,
+        "weight_m": 33.05
+      },
+      {
+        "node": 114,
+        "weight_m": 11.16
+      },
+      {
+        "node": 115,
+        "weight_m": 23.89
+      }
+    ],
+    "114": [
+      {
+        "node": 113,
+        "weight_m": 11.16
+      }
+    ],
+    "115": [
+      {
+        "node": 113,
+        "weight_m": 23.89
+      }
+    ],
+    "116": [
+      {
+        "node": 1,
+        "weight_m": 16.3
+      },
+      {
+        "node": 11,
+        "weight_m": 21.79
+      }
+    ],
+    "117": [
+      {
+        "node": 6,
+        "weight_m": 9.54
+      },
+      {
+        "node": 7,
+        "weight_m": 16.06
+      }
+    ]
+  }
+}

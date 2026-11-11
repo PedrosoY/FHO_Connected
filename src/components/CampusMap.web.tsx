@@ -45,6 +45,7 @@ function escapeHtml(text: string) {
 export function CampusMap({
   onSelect, selectedId, focusedId, routeIds = [], showPassages = false, showConnections = false,
   gpsOrigin = null, gpsNearestId = null, routeCoordinates,
+  routeActive = false, showOtherPointsOnRoute = false, originId = null, destinationId = null,
 }: CampusMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
@@ -91,14 +92,18 @@ export function CampusMap({
         radius: 9, color: '#fff', weight: 3, fillColor: '#1769e0', fillOpacity: 1,
       }).bindTooltip('Sua localização (GPS)').addTo(layer);
     }
-    places.filter(p => showPassages || p.category !== 'Caminho' || p.id === selectedId || p.id === gpsNearestId || routeIds.includes(p.id))
+    places.filter(p => routeActive && !showOtherPointsOnRoute
+        ? p.id === originId || p.id === destinationId
+        : showPassages || p.category !== 'Caminho' || p.id === selectedId || p.id === gpsNearestId || routeIds.includes(p.id))
       .forEach(p => {
         const selected = p.id === selectedId;
+        const isRouteOrigin = routeActive && p.id === originId;
+        const isRouteDestination = routeActive && p.id === destinationId;
         const notable = p.category !== 'Caminho';
         L.circleMarker([p.latitude, p.longitude], {
           radius: selected ? 9 : notable ? 6.5 : 4,
           color: '#fff', weight: selected ? 3 : 1,
-          fillColor: selected ? '#F29A23' : notable ? '#D35A30' : '#13795B', fillOpacity: 0.95,
+          fillColor: isRouteOrigin ? '#31A25B' : isRouteDestination ? '#D44949' : selected ? '#F29A23' : notable ? '#D35A30' : '#13795B', fillOpacity: 0.95,
         }).bindTooltip(`${escapeHtml(p.name)} · nó ${p.id}`)
           .on('click', () => callbackRef.current(p)).addTo(layer);
       });
@@ -147,7 +152,7 @@ export function CampusMap({
   }, []);
 
   const routeKey = (routeCoordinates ?? routeIds.map(id => placesById.get(id)).filter(p => p !== undefined)).map(p => `${p.latitude.toFixed(6)},${p.longitude.toFixed(6)}`).join('|');
-  useEffect(() => { redrawRef.current(); }, [selectedId, showPassages, showConnections, routeKey, gpsOrigin?.latitude, gpsOrigin?.longitude]);
+  useEffect(() => { redrawRef.current(); }, [selectedId, showPassages, showConnections, routeKey, routeActive, showOtherPointsOnRoute, originId, destinationId, gpsOrigin?.latitude, gpsOrigin?.longitude]);
   useEffect(() => {
     adjustViewportRef.current();
   }, [focusedId, routeKey, gpsOrigin?.latitude, gpsOrigin?.longitude]);

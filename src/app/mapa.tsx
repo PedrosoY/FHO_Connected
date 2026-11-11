@@ -24,6 +24,7 @@ export default function Mapa() {
   const [search, setSearch] = useState('');
   const [searchOpen, setSearchOpen] = useState(false);
   const [showPassages, setShowPassages] = useState(false);
+  const [showOtherPointsOnRoute, setShowOtherPointsOnRoute] = useState(false);
   const [showConnections, setShowConnections] = useState(false);
   const [optionsOpen, setOptionsOpen] = useState(false);
   const [focusId, setFocusId] = useState<number | null>(findPlace(params.focus)?.id ?? null);
@@ -136,9 +137,11 @@ export default function Mapa() {
 
   return <View style={ui.page}>
     <CampusMap selectedId={selected?.id} focusedId={focusId} onSelect={selectOnMap}
-      routeIds={graphRoute?.ids ?? []} routeCoordinates={routeCoordinates} gpsOrigin={gpsOrigin}
-      gpsNearestId={gpsOrigin?.nearestNodeId ?? null}
-      showPassages={showPassages} showConnections={showConnections} />
+      routeIds={graphRoute?.ids ?? []} routeCoordinates={routeCoordinates} gpsOrigin={useGpsAsOrigin ? gpsOrigin : null}
+      gpsNearestId={useGpsAsOrigin ? gpsOrigin?.nearestNodeId ?? null : null}
+      routeActive={route !== null} showOtherPointsOnRoute={showOtherPointsOnRoute}
+      originId={useGpsAsOrigin ? null : originId} destinationId={destinationId}
+      showPassages={showPassages} showConnections={Boolean(route ? showOtherPointsOnRoute && showConnections : showConnections)} />
 
     <View pointerEvents="box-none" style={ui.top}>
       <View style={ui.searchBox}>
@@ -153,13 +156,17 @@ export default function Mapa() {
       </View>
       {optionsOpen && <View style={ui.options}>
         <Text style={ui.optionTitle}>Visualização do mapa</Text>
+        {route && <Pressable accessibilityRole="switch" accessibilityState={{ checked: showOtherPointsOnRoute }}
+          onPress={() => setShowOtherPointsOnRoute(value => !value)} style={ui.optionRow}>
+          <Text style={ui.optionText}>{showOtherPointsOnRoute ? '☑' : '□'} Mostrar outros pontos durante a rota</Text>
+        </Pressable>}
         <Pressable onPress={() => setShowPassages(!showPassages)} style={ui.optionRow}>
           <Text style={ui.optionText}>{showPassages ? '☑' : '□'} Mostrar pontos de passagem</Text>
         </Pressable>
         <Pressable onPress={() => setShowConnections(!showConnections)} style={ui.optionRow}>
           <Text style={ui.optionText}>{showConnections ? '☑' : '□'} Mostrar conexões do grafo</Text>
         </Pressable>
-        <Text style={ui.hint}>Os detalhes técnicos ficam ocultos para manter o mapa limpo.</Text>
+        <Text style={ui.hint}>{route && !showOtherPointsOnRoute ? 'Durante a rota, ficam visíveis apenas o caminho, a partida, o destino e o GPS em uso.' : 'Os detalhes técnicos podem ser ocultados para manter o mapa limpo.'}</Text>
       </View>}
     </View>
 
@@ -228,6 +235,10 @@ export default function Mapa() {
         {hasOrigin && destination && route ? <View style={ui.routeSummary}>
           <Text style={ui.routeDistance}>{route.meters.toLocaleString('pt-BR', { maximumFractionDigits: 0 })} m</Text>
           <Text style={ui.routeTime}>Aproximadamente {minutes} min a pé · {route.segments} trechos</Text>
+          <Pressable accessibilityRole="switch" accessibilityState={{ checked: showOtherPointsOnRoute }}
+            onPress={() => setShowOtherPointsOnRoute(value => !value)} style={ui.routeVisibilityButton}>
+            <Text style={ui.routeVisibilityText}>{showOtherPointsOnRoute ? '☑ Mostrar outros pontos' : '□ Mostrar outros pontos'}</Text>
+          </Pressable>
           <Text style={ui.hint}>Dijkstra + {useGpsAsOrigin ? 'ligação virtual em linha reta ao nó mais próximo' : 'arestas cadastradas'}. Não é navegação GPS em tempo real.</Text>
         </View> : hasOrigin && destination ? <Text style={ui.error}>Não há rota entre os locais selecionados.</Text> : null}
         {useGpsAsOrigin && gpsOrigin && <Text style={ui.gpsHint}>Ligação ao ponto {gpsOrigin.nearestNodeId}: {gpsOrigin.connectorMeters.toFixed(0)} m · precisão GPS ±{gpsOrigin.accuracyMeters?.toFixed(0) ?? '?'} m. Trecho virtual: confirme se a passagem é acessível.</Text>}
@@ -271,6 +282,8 @@ const ui = StyleSheet.create({
   routeField: { height: 43, flexDirection: 'row', alignItems: 'center', backgroundColor: '#f4f6f9', borderRadius: 10, marginBottom: 8, paddingHorizontal: 13, gap: 10 },
   dot: { width: 10, height: 10, borderRadius: 5 }, routeText: { color: DARK, fontWeight: '600', fontSize: 14, flex: 1 }, muted: { color: '#737f8d' }, chevron: { color: '#697887', fontSize: 24 },
   hint: { color: '#707b89', fontSize: 12, lineHeight: 18, marginTop: 6 }, quickActions: { flexDirection: 'row', gap: 7, marginTop: 6, marginBottom: 8 }, quickButton: { borderColor: '#d8e4f7', borderWidth: 1, borderRadius: 20, paddingVertical: 9, paddingHorizontal: 11, flex: 1, alignItems: 'center' }, quickText: { color: BLUE, fontWeight: '700', fontSize: 12 },
+  routeVisibilityButton: { alignSelf: 'flex-start', paddingVertical: 10, paddingHorizontal: 2 },
+  routeVisibilityText: { color: BLUE, fontSize: 13, fontWeight: '700' },
   routeSummary: { marginTop: 9, padding: 12, backgroundColor: '#eaf2ff', borderRadius: 12 }, routeDistance: { color: BLUE, fontSize: 24, fontWeight: '800' }, routeTime: { color: DARK, fontSize: 13, fontWeight: '600' }, error: { color: '#b1292c', marginVertical: 9 },
   actionRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 10 }, primary: { backgroundColor: BLUE, padding: 14, borderRadius: 30, alignItems: 'center' }, primaryText: { color: '#fff', fontSize: 15, fontWeight: '800' },
   secondary: { backgroundColor: '#eff3fa', height: 47, width: 47, borderRadius: 24, alignItems: 'center', justifyContent: 'center' }, secondaryText: { color: BLUE, fontSize: 24, fontWeight: '700' },

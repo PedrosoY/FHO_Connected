@@ -199,3 +199,7 @@ No iOS e Android as mensagens de permissão estão configuradas em `app.json`. N
 
 A posição só é solicitada por ação explícita, é mantida na memória durante o uso da tela e não é gravada no CSV/JSON nem enviada a um servidor do projeto.
 
+
+## Visualização limpa de rotas
+
+Ao calcular uma rota, o mapa oculta automaticamente os demais marcadores, mantendo apenas a linha do caminho, os marcadores de partida e destino e a localização GPS quando usada. Para voltar a visualizar todos os pontos, ative **Mostrar outros pontos** no resumo da rota ou nas opções do mapa. Ao limpar a rota, os pontos voltam à visualização normal. O cálculo do Dijkstra e o arquivo GraFHO não são alterados.

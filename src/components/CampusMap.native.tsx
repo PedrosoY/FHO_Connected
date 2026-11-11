@@ -21,6 +21,7 @@ const asCoordinate = (id: number) => {
 export function CampusMap({
   onSelect, selectedId, focusedId, routeIds = [], showPassages = false, showConnections = false,
   gpsOrigin = null, gpsNearestId = null, routeCoordinates,
+  routeActive = false, showOtherPointsOnRoute = false, originId = null, destinationId = null,
 }: CampusMapProps) {
   const mapRef = useRef<MapView>(null);
   const coordinates = routeCoordinates ?? routeIds.map(id => placesById.get(id)).filter(p => p !== undefined)
@@ -53,10 +54,12 @@ export function CampusMap({
       {gpsOrigin ? <Marker coordinate={gpsOrigin} title="Sua localização" description="Origem temporária obtida pelo GPS">
         <View style={styles.gpsHalo}><View style={styles.gpsDot} /></View>
       </Marker> : null}
-      {places.filter(p => showPassages || p.category !== 'Caminho' || p.id === selectedId || p.id === gpsNearestId || routeIds.includes(p.id)).map(p => (
+      {places.filter(p => routeActive && !showOtherPointsOnRoute
+        ? p.id === originId || p.id === destinationId
+        : showPassages || p.category !== 'Caminho' || p.id === selectedId || p.id === gpsNearestId || routeIds.includes(p.id)).map(p => (
         <Marker key={p.id} coordinate={{ latitude: p.latitude, longitude: p.longitude }}
           title={`${p.name} (nó ${p.id})`} description={p.category}
-          pinColor={p.id === selectedId ? '#F29A23' : p.category !== 'Caminho' ? '#D35A30' : '#13795B'}
+          pinColor={routeActive && p.id === originId ? '#31A25B' : routeActive && p.id === destinationId ? '#D44949' : p.id === selectedId ? '#F29A23' : p.category !== 'Caminho' ? '#D35A30' : '#13795B'}
           onPress={() => onSelect(p)} />
       ))}
     </MapView>

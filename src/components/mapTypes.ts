@@ -11,4 +11,8 @@ export type CampusMapProps = {
   gpsOrigin?: GeoPoint | null;
   gpsNearestId?: number | null;
   routeCoordinates?: GeoPoint[];
+  routeActive?: boolean;
+  showOtherPointsOnRoute?: boolean;
+  originId?: number | null;
+  destinationId?: number | null;
 };
